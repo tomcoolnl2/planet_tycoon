@@ -1,0 +1,8 @@
+web:
+  build: .
+  volumes:
+    - .:/usr/src/app
+  environment:
+    - NODE_ENV=development
+  ports:
+    - 1666:1666

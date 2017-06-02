@@ -169,7 +169,7 @@ module.exports = {
 	devServer: {
 		contentBase: isProduction ? buildPath : sourcePath,
 		historyApiFallback: true,
-		port: 3000,
+		port: 1666,
 		compress: isProduction,
 		inline: !isProduction,
 		hot: !isProduction,
