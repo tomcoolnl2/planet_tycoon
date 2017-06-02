@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { testAction, testAsync } from 'actions/app';
 import Icon from 'components/Global/Icon';
-import bookImg from '../../../assets/img/book2.jpg';
 
 @connect(state => ({
   asyncData: state.app.get('asyncData'),
@@ -41,6 +40,7 @@ export default class Dashboard extends Component {
   }
 
   render() {
+
     const {
       asyncData,
       asyncError,
@@ -50,9 +50,9 @@ export default class Dashboard extends Component {
 
     return (
       <div className='Dashboard'>
-        <h1>Marvin</h1>
+        <h1>Planet Tycoon</h1>
         <p>
-          Boilerplate for kicking off React/Redux applications.
+          Lorem ipsum
         </p>
 
         <hr />
@@ -72,6 +72,7 @@ export default class Dashboard extends Component {
           { asyncData && <p>{ asyncData }</p> }
           { asyncLoading && <p>Loading...</p> }
           { asyncError && <p>Error: { asyncError }</p> }
+					
           <button
             disabled={ asyncLoading }
             onClick={ this.handleAsyncButtonClick }
@@ -80,17 +81,6 @@ export default class Dashboard extends Component {
           </button>
         </div>
 
-        <h3>Background image</h3>
-        <div className='Example'>
-          <div className='BackgroundImgExample' />
-        </div>
-
-        <h3>Image imported to the component</h3>
-        <div className='Example'>
-          <img src={ bookImg } alt='' className='ImgExample' />
-        </div>
-
-        <h3>SVG sprite icon set</h3>
         <div className='Example'>
           <Icon glyph='square' />
           <Icon glyph='circle' />

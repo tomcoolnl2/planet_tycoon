@@ -99,21 +99,6 @@ button:hover {
   display: block;
 }
 
-.Menu-logo {
-  margin-right: 2rem;
-  width: 6rem;
-
-  @include lg {
-    position: fixed;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    border-right: 1px solid $grey-border;
-    width: 20rem;
-    padding: 4rem;
-  }
-}
-
 .Menu-links {
   @include md {
   }
@@ -160,18 +145,8 @@ button:hover {
   margin-right: 10px;
 }
 
-.BackgroundImgExample {
-  background-image: url(../assets/img/book1.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 16rem;
-  max-width: 25rem;
-}
 
-.ImgExample {
-  max-width: 25rem;
-}
+
 
 hr {
   border: 0;
