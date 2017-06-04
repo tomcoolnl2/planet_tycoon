@@ -121,7 +121,7 @@ if (isProduction) {
 	// Development plugins
 	plugins.push(
 		new webpack.HotModuleReplacementPlugin(),
-		new DashboardPlugin()
+		new DashboardPlugin({ port: 3001 })
 	);
 
 	// Development rules
